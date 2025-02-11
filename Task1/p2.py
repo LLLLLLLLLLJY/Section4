@@ -6,8 +6,6 @@ from numpy.random import rand, seed
 import matplotlib.pyplot as plt
 import os
 
-seed(1108)
-
 def divide_matrix(matrix):
     mid = matrix.shape[0] // 2
     return matrix[:mid, :mid], matrix[:mid, mid:], matrix[mid:, :mid], matrix[mid:, mid:]
